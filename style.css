@@ -79,12 +79,13 @@ body {
 /* ===== BUTTON ===== */
 .btn {
   display: inline-block;
-  padding: 12px 26px;
+  padding: 14px 30px;
   background: #22c55e;
-  color: #000;
+  color: #fff;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -92,6 +93,9 @@ body {
   background: #16a34a;
 }
 
+.btn i {
+  margin-right: 8px;
+}
 /* ===== SOCIAL LINKS ===== */
 .social-links {
   margin-top: 18px;
