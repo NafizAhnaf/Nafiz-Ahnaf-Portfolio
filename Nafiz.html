@@ -104,31 +104,94 @@
 
     <!-- Certificates link -->
     <li>
-      <a href="#certificates" class="cert-link">Certificates</a>
-      
-      <!-- Certificates list, initially hidden -->
-      <ul class="certificates-list">
-        <li>"C:\Users\LENOVO\Desktop\Certificates\ICT Olympiad Selection Round.pdf"</li>
-        <li>Certificate 2</li>
-        <li>Certificate 3</li>
-        <li>Certificate 4</li>
-        <li>Certificate 5</li>
-        <li>Certificate 6</li>
-        <li>Certificate 7</li>
-        <li>Certificate 8</li>
-        <li>Certificate 9</li>
-        <li>Certificate 10</li>
-      </ul>
+  <a href="#" class="cert-link">Certificates</a>
+
+  <ul class="certificates-list">
+    <li>
+      <a href="./ICT_Olympiad_Selection_Round_Certificate.pdf" target="_blank">
+  ICT Olympiad Selection Round Certificate
+</a>
     </li>
+<li>
+      <a href="./AppLink_Certificate.webp" target="_blank">
+  AppLink Certificate
+</a> 
+    </li> 
+
+<li>
+      <a href="./Saint_Placid's_School_and_College_Cricket_Champion.pdf" target="_blank">
+  Saint Placid's School and College Cricket Champion
+</a> 
+    </li>
+
+<li>
+      <a href="./Saint_Placid's_School_and_College_Table_Tanis_Champion.pdf" target="_blank">
+  Saint Placid's School and College Table Tanis Champion
+</a> 
+    </li>
+
+<li>
+      <a href="./Saint_Placid's_School_and_College_Quiz_Competion.pdf" target="_blank">
+  Saint Placid's School and College Quiz Competion
+</a> 
+    </li>
+
+<li>
+      <a href="./The_Pathway_Data_Engineering.pdf" target="_blank">
+  The Pathway Data Engineering
+</a>
+    </li>
+<li>
+      <a href="./Github_Copilot.pdf" target="_blank">
+  Github Copilot
+</a>
+    </li>
+
+<li>
+      <a href="./RoverX.pdf" target="_blank">
+  RoverX
+</a>
+    </li>
+
+<li>
+      <a href="./Richaed_E.Merwin_Scholarship.pdf" target="_blank">
+  Richaed E.Merwin Scholarship
+</a>
+    </li>
+
+  </ul>
+</li>
+
+
 
     <li>Hackathon / Olympiad</li>
   </ul>
 </section>
-
+<!-- ================= CONTACT SECTION ================= -->
+ <section id="contact"> 
+<h2>Contact Me</h2> <form> <input type="text" placeholder="Your Name" required>
+ <input type="email" placeholder="Your Email" required>
+ <textarea placeholder="Your Message"></textarea>
+ <button type="submit">Send Message</button>
+ </form> 
+</section>
 
   <footer>
     <p>© 2025 Syed Nafiz Ahnaf. All Rights Reserved.</p>
   </footer>
+<script>
+  const certLink = document.querySelector('.cert-link');
+  const certList = document.querySelector('.certificates-list');
+
+  certLink.addEventListener('click', function (e) {
+    e.preventDefault(); // page jump বন্ধ
+    if (certList.style.display === 'block') {
+      certList.style.display = 'none';
+    } else {
+      certList.style.display = 'block';
+    }
+  });
+</script>
 
 </body>
 </html>
