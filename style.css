@@ -228,7 +228,7 @@ body::before {
 
 /* ===== CERTIFICATES LIST (Achievements) ===== */
 .certificates-list {
-  display: none; /* initially hide */
+  display: block; /* always visible */
   margin-top: 10px;
   padding-left: 20px;
   list-style: circle;
