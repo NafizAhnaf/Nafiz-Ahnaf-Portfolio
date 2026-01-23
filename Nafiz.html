@@ -3,132 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Syed Nafiz Ahnaf | Portfolio</title>
+  <title>Syed Nafiz Ahnaf | Portfolio</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Icons (optional later) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- ================= SIDEBAR NAVIGATION ================= -->
+  <!-- ===== SIDEBAR ===== -->
   <nav class="sidebar">
     <ul>
       <li><a href="#home"><i class="fa fa-house"></i></a></li>
       <li><a href="#about"><i class="fa fa-user"></i></a></li>
       <li><a href="#projects"><i class="fa fa-briefcase"></i></a></li>
       <li><a href="#achievements"><i class="fa fa-trophy"></i></a></li>
-      <li><a href="#publications"><i class="fa fa-book"></i></a></li>
       <li><a href="#contact"><i class="fa fa-envelope"></i></a></li>
     </ul>
   </nav>
 
-  <!-- ================= HOME / HERO SECTION ================= -->
+  <!-- ===== HERO SECTION ===== -->
   <section id="home" class="hero">
 
     <div class="hero-left">
-      <img src="ppicture.jpg" style="width:250px;height:250px;border-radius:50%;object-fit:cover;">
+      <img src="ppicture.jpg" alt="Profile Picture"
+           style="width:250px;height:250px;border-radius:50%;object-fit:cover;">
     </div>
 
     <div class="hero-right">
       <h1>Hi, I'm <span>Syed Nafiz Ahnaf</span></h1>
 
       <h3>
-        Undergrad Student | Interest in Research  <br>
+        Undergrad Student | Interest in Research <br>
         B.Sc. in CSE
       </h3>
 
       <p>
         Currently studying B.Sc. (Engg.) in Computer Science and Engineering <br>
-        at International Islamic University Chittagong (IIUC), Chittagong, Bangladesh
+        at International Islamic University Chittagong (IIUC), Bangladesh
       </p>
 
-      <a href="Syed_Nafiz_Ahnaf_CV.DOCX" class="btn" download target="_blank">
-  <i class="fas fa-download"></i> Download CV
-</a>
+      <!-- CV DOWNLOAD -->
+      <a href="Syed_Nafiz_Ahnaf_CV.DOCX" class="btn" download>
+        <i class="fas fa-download"></i> Download CV
+      </a>
 
-
-      <!-- Social Links -->
+      <!-- SOCIAL LINKS -->
       <div class="social-links">
-        <a href="https://www.facebook.com/share/17Bb2mBpDS/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/nafiz-ahnaf-a2ab4933b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/share/17Bb2mBpDS/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nafiz-ahnaf-a2ab4933b" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
         <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
 
   </section>
 
-  <!-- ================= ABOUT SECTION ================= -->
+  <!-- ===== ABOUT ===== -->
   <section id="about">
     <h2>About Me</h2>
-   <p style="color:#111; font-style:italic; font-weight:bold; font-size:18px;">
-      I am an undergraduate Software Engineering student with a strong interest in data science, machine learning, and deep learning. I enjoy learning new technologies and applying my knowledge to real-world problems. I am currently building my skills through academic projects, self-learning, and research-oriented activities. My goal is to become a skilled software engineer and contribute to impactful, data-driven solutions.
-   
+    <p style="color:#111; font-style:italic; font-weight:bold; font-size:18px;">
+      I am an undergraduate Software Engineering student with a strong interest
+      in data science, machine learning, and deep learning. I enjoy learning new
+      technologies and applying my knowledge to real-world problems.
+    </p>
   </section>
 
-  <!-- ================= PROJECTS SECTION ================= -->
+  <!-- ===== PROJECTS ===== -->
   <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project-list">
+    <div class="project-card">
+      <h3>1st Semester C Project</h3>
+      <p>
+        Console-based C program for leaderboard management using file handling
+        and structured programming concepts.
+      </p>
 
-      <div class="project-card">
-        <h3>Project Title 1</h3>
-        <p>Short description of the project.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Project Title 2</h3>
-        <p>Short description of the project.</p>
-        <a href="#">View Project</a>
-      </div>
+      <a href="projects/C_Project_1st_Semester.zip" download>
+  Download C Project (1st Semester)
+</a>
 
     </div>
+
   </section>
 
   <!-- ================= ACHIEVEMENTS SECTION ================= -->
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Award / Scholarship / Competition</li>
-      <li>Certification</li>
-      <li>Hackathon / Olympiad</li>
-    </ul>
-  </section>
+<section id="achievements">
+  <h2>Achievements</h2>
 
-  <!-- ================= PUBLICATIONS SECTION ================= -->
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>Paper Title – Conference / Journal Name</li>
-      <li>Research Article – Year</li>
-    </ul>
-  </section>
+  <ul>
+    <li>Award / Scholarship / Competition</li>
 
-  <!-- ================= CONTACT SECTION ================= -->
-  <section id="contact">
-    <h2>Contact Me</h2>
+    <!-- Certificates link -->
+    <li>
+      <a href="#certificates" class="cert-link">Certificates</a>
+      
+      <!-- Certificates list, initially hidden -->
+      <ul class="certificates-list">
+        <li>"C:\Users\LENOVO\Desktop\Certificates\ICT Olympiad Selection Round.pdf"</li>
+        <li>Certificate 2</li>
+        <li>Certificate 3</li>
+        <li>Certificate 4</li>
+        <li>Certificate 5</li>
+        <li>Certificate 6</li>
+        <li>Certificate 7</li>
+        <li>Certificate 8</li>
+        <li>Certificate 9</li>
+        <li>Certificate 10</li>
+      </ul>
+    </li>
 
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <li>Hackathon / Olympiad</li>
+  </ul>
+</section>
 
-  <!-- ================= FOOTER ================= -->
+
   <footer>
-    <p>© 2025 Your Name. All Rights Reserved.</p>
+    <p>© 2025 Syed Nafiz Ahnaf. All Rights Reserved.</p>
   </footer>
-
-  <!-- JavaScript -->
-  <script src="js/script.js"></script>
 
 </body>
 </html>

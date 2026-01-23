@@ -96,6 +96,7 @@ body {
 .btn i {
   margin-right: 8px;
 }
+
 /* ===== SOCIAL LINKS ===== */
 .social-links {
   margin-top: 18px;
@@ -207,6 +208,7 @@ footer {
     display: none;
   }
 }
+
 /* ===== BACKGROUND WATERMARK (IIUC CENTRAL MOSQUE) ===== */
 body::before {
   content: "";
@@ -215,15 +217,29 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-
   background-image: url("iiuc-mosque.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  /* VERY STRONG WATERMARK */
   filter: grayscale(85%) contrast(110%) blur(0.6px);
   opacity: 0.35;
-
   z-index: -1;
+}
+
+/* ===== CERTIFICATES LIST (Achievements) ===== */
+.certificates-list {
+  display: none; /* initially hide */
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: circle;
+}
+
+.cert-link {
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cert-link:hover {
+  color: #22c55e;
 }
